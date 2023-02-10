@@ -1,0 +1,47 @@
+.flex-column{
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    border-radius: 100%;
+}
+
+.about__logo{
+    width: 20rem;
+    border-radius: 100%;
+}
+
+.catalog__product_image{
+    width: 12rem;
+}
+
+.where__map{
+    width: 80%;
+}
+
+.catalog .categories{
+    width: 22%;
+}
+
+.about .slider{
+    justify-content: space-between;
+}
+
+.about .slider img{
+    width: 184px;
+    height: 184px;
+}
+
+.product__photo{
+    /* height: 650px; */
+    width: 30rem;
+}
+
+footer{
+    background: #ddd9d9;
+}
