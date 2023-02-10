@@ -10,6 +10,6 @@ class CatalogController extends Controller
     {
         $sort = request('sort', 'name');
         $products = product::orderBy($sort)->get();
-        return view('catalog', compact('products'));
+        return view('catalog', compact('products'), ['title' => 'Каталог | Copy Star']);
     }
 }

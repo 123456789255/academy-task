@@ -13,18 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [App\Http\Controllers\IndexController::class, 'welcome'])->name('about');
+Route::get('/', [App\Http\Controllers\ProductController::class, 'about'])->name('about');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\ProductController::class, 'about'])->name('aboutslider');
 
 Route::get('/catalog', [App\Http\Controllers\CatalogController::class, 'catalog']);
 Route::get('/where', [App\Http\Controllers\WhereController::class, 'where']);
 
-Route::get('/catalog/{product}', function ($product) {
-    return view('product', ['product' => $product]);
-});
 Route::get('/catalog/sort/{name}/{nap}',[App\Http\Controllers\CatalogController::class, "sort"]  );
 Route::get('/catalog/filtr/{idCat}',[App\Http\Controllers\CatalogController::class, "prodCat"] );
 Route::get('/{product}', [App\Http\Controllers\ProductController::class, 'show'])->name('product');
+

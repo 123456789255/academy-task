@@ -1,6 +1,9 @@
 .flex-column{
     flex-direction: column;
 }
+body{
+    background-color: #fff;
+}
 
 .align-center{
     align-items: center;
@@ -13,7 +16,6 @@
 
 .about__logo{
     width: 20rem;
-    border-radius: 100%;
 }
 
 .catalog__product_image{
