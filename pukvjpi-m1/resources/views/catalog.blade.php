@@ -20,7 +20,7 @@
                             <img src="/public/img/{{ $product->photo }}" alt="image" class="catalog__product_image">
                             <div class="text">
                                 <p class="text-start">{{ $product->name }}</p>
-                                <p class="text-start">{{ intval($product->price) }} рублей</p>
+                                <p class="text-start">{{ intval($product->price) }}&#8381</p>
                             </div>
                         </a>
                         <a href="{{ route('cart.add', $product->id) }}" class="btn btn-primary">Add to Cart</a>

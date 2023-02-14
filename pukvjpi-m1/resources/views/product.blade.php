@@ -7,7 +7,7 @@
             </div>
             <div class="ms-5 d-flex flex-column">
                 <h2>{{ $product->name }}</h2>
-                <p>{{ intval($product->price) }} рублей</p>
+                <p>{{ intval($product->price) }}&#8381</p>
                 <a href="{{ route('cart.add', $product->id) }}" class="btn btn-primary">Add to Cart</a>
             </div>
         </div>

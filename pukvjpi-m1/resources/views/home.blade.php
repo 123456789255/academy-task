@@ -23,7 +23,7 @@
                                 </div>
                                 <div>
                                     <p class="">{{ $product->name }}</p>
-                                    <p class="">{{ $product->price }} рублей</p>
+                                    <p class="">{{ $product->price }}&#8381</p>
                                 </div>
 
                             </a>
@@ -40,7 +40,7 @@
                                 </div>
                                 <div>
                                     <p class="">{{ $product->name }}</p>
-                                    <p class="">{{ $product->price }} рублей</p>
+                                    <p class="">{{ $product->price }}&#8381</p>
                                 </div>
 
                             </a>

@@ -23,7 +23,7 @@
                             {{ $cart->quantity }}шт
                             <a href="/public/add-on-cart/{{ $cart->product_id }}" class="btn btn-primary m-auto">+</a>
                         </td>
-                        <td class="w-33 d-flex justify-content-end align-center">{{ intval($cart->Product->price) }} рублей</td>
+                        <td class="w-33 d-flex justify-content-end align-center">{{ intval($cart->Product->price) }}&#8381</td>
                         <td class="w-33 d-flex justify-content-end align-center"><a href="/public/remove-all-from-card/{{ $cart -> id }}" class="btn btn-danger">Удалить</a></td>
                     </tr>
                 @endforeach

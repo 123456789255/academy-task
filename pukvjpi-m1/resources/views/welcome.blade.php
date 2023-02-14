@@ -25,7 +25,7 @@
                                     </div>
                                     <div class="text">
                                         <p class="">{{ $product->name }}</p>
-                                        <p class="">{{ intval($product->price)  }} рублей</p>
+                                        <p class="">{{ intval($product->price)  }}&#8381</p>
                                     </div>
 
                                 </a>
@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="text">
                                         <p class="">{{ $product->name }}</p>
-                                        <p class="">{{ $product->price }} рублей</p>
+                                        <p class="">{{ $product->price }}&#8381</p>
                                     </div>
 
                                 </a>
