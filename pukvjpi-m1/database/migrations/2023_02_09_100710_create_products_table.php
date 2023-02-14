@@ -17,10 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('year');
             $table->string('name');
-            $table->integer('price');
-            $table->string('pristavka');
-            $table->string('game');
-            $table->string('acessory');
+            $table->decimal('price', $precision = 12, $scale = 2);
             $table->string('photo');
             $table->timestamps();
         });

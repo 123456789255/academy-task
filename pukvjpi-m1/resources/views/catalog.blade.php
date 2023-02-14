@@ -8,21 +8,23 @@
             <h1>Каталог</h1>
         </header>
         <div>
-            <div class="categories d-flex justify-content-between">
-                <a href="?sort=year">Год производства</a>
-                <a href="?sort=name">Name</a>
-                <a href="?sort=price">Price</a>
+            <div class="categories d-flex justify-content-between w-25">
+                <a href="?sort=year" class="">Год производства</a>
+                <a href="?sort=name" class="">Name</a>
+                <a href="?sort=price" class="">Price</a>
             </div>
             <div class="d-flex flex-wrap w-100 mt-3">
                 @foreach ($products as $product)
-                    <a href="{{ route('product', $product->id) }}" class="mb-4 justify-content-between d-flex align-center flex-column">
-                        <div class="d-flex flex-column m-auto align-center justify-content-center">
-                            <picture><img src="{{ $product->photo }}" alt="image" class="catalog__product_image"></picture>
-                            <p>{{ $product->name }}</p>
-                            <p>{{ $product->price }} рублей</p>
-                            <a href="" class="btn btn-primary">Добавить в корзину</a>
-                        </div>
-                    </a>
+                    <div class="m-auto mb-3 catalog-card p-3">
+                        <a href="{{ route('product', $product->id) }}" class="none-underline catalog-card_link">
+                            <img src="/public/img/{{ $product->photo }}" alt="image" class="catalog__product_image">
+                            <div class="text">
+                                <p class="text-start">{{ $product->name }}</p>
+                                <p class="text-start">{{ intval($product->price) }} рублей</p>
+                            </div>
+                        </a>
+                        <a href="{{ route('cart.add', $product->id) }}" class="btn btn-primary">Add to Cart</a>
+                    </div>
                 @endforeach
             </div>
         </div>
